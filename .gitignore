@@ -1,2 +1,3 @@
 .venv
-.ipynb_checkpointscleaned_tmdb_data.csv
+*.csv
+*.png
