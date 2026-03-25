@@ -1,0 +1,1980 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0206.0336                               -->
+<workbook original-version='18.1' source-build='2025.3.3 (20253.26.0206.0336)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_budget_revenue' inline='true' name='federated.0n5yflh1y3am7k17sfel71avz0ss' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_budget_revenue' name='semistructpassivestore-direct.02tj4wp0d61ohe1g0si7m0h2hul2'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Tony/tmdb-scrapper' filename='tableau_budget_revenue.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[tableau_budget_revenue.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.02tj4wp0d61ohe1g0si7m0h2hul2' name='tableau_budget_revenue.json' table='[tableau_budget_revenue.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[budget]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>budget</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[popularity]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>popularity</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primary_genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[primary_genre]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>primary_genre</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>title</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_average</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vote_average]</local-name>
+            <parent-name>[tableau_budget_revenue.json]</parent-name>
+            <remote-alias>vote_average</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='tableau_budget_revenue.json' datatype='table' name='[__tableau_internal_object_id__].[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]' role='measure' type='quantitative' />
+      <column caption='Budget' datatype='real' name='[budget]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>budget</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>genres</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>popularity</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Primary Genre' datatype='string' name='[primary_genre]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>primary_genre</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Release Year' datatype='real' name='[release_year]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>release_year</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>revenue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>title</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>vote_average</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folders-common>
+        <folder name='Tableau Budget Revenue'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[genres]' type='field' />
+          <folder-item name='[primary_genre]' type='field' />
+          <folder-item name='[release_year]' type='field' />
+          <folder-item name='[title]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tony/AppData/Local/Temp/TableauTemp/#TableauTemp_1b60xqw1itn2kk13vqrva0n7s71p.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2026 03:27:57 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3901</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>336</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>856</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>popularity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3108</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>primary_genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[primary_genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>primary_genre</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2489</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3675</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_average</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[vote_average]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_average</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tableau_budget_revenue.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1427</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_budget_revenue.json' id='tableau_budget_revenue.json_A40AE6CA98D648558AC1D80CB3BF8C3E'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.02tj4wp0d61ohe1g0si7m0h2hul2' name='tableau_budget_revenue.json' table='[tableau_budget_revenue.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_month_genre' inline='true' name='federated.0vqghh61kuke6q1avqojp0fg92l8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_month_genre' name='semistructpassivestore-direct.08fxrrg0td6bke1fjuvlj0zgaavs'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Tony/tmdb-scrapper' filename='tableau_month_genre.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[tableau_month_genre.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.08fxrrg0td6bke1fjuvlj0zgaavs' name='tableau_month_genre.json' table='[tableau_month_genre.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[tableau_month_genre.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_revenue]</local-name>
+            <parent-name>[tableau_month_genre.json]</parent-name>
+            <remote-alias>avg_revenue</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[tableau_month_genre.json]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movie_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[movie_count]</local-name>
+            <parent-name>[tableau_month_genre.json]</parent-name>
+            <remote-alias>movie_count</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[release_month]</local-name>
+            <parent-name>[tableau_month_genre.json]</parent-name>
+            <remote-alias>release_month</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='tableau_month_genre.json' datatype='table' name='[__tableau_internal_object_id__].[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]' role='measure' type='quantitative' />
+      <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_revenue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>genre</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Movie Count' datatype='real' name='[movie_count]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>movie_count</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Release Month' datatype='real' name='[release_month]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>release_month</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[release_month]' derivation='None' name='[none:release_month:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Exclusions (Genre,Release Month)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:genre:nk]' />
+          <groupfilter function='level-members' level='[none:release_month:ok]' />
+        </groupfilter>
+      </group>
+      <folders-common>
+        <folder name='Tableau Month Genre'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[genre]' type='field' />
+          <folder-item name='[release_month]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tony/AppData/Local/Temp/TableauTemp/#TableauTemp_13qnj980i1v40915kfe7k0n48951.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2026 03:28:38 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_month_genre.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>217</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_revenue</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_month_genre.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>217</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_month_genre.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movie_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[movie_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movie_count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_month_genre.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_month</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[release_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_month</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_month_genre.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_month_genre.json' id='tableau_month_genre.json_C0A106D9D37F4BFEBC8A496733453DD1'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.08fxrrg0td6bke1fjuvlj0zgaavs' name='tableau_month_genre.json' table='[tableau_month_genre.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_franchises' inline='true' name='federated.0ze32ds193df4w15o10ta0vtvixw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_franchises' name='semistructpassivestore-direct.1admtnh0dhwo5u1d4li6106vevhc'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Tony/tmdb-scrapper' filename='tableau_franchises.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[tableau_franchises.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1admtnh0dhwo5u1d4li6106vevhc' name='tableau_franchises.json' table='[tableau_franchises.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[tableau_franchises.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_budget]</local-name>
+            <parent-name>[tableau_franchises.json]</parent-name>
+            <remote-alias>avg_budget</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating]</local-name>
+            <parent-name>[tableau_franchises.json]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_revenue]</local-name>
+            <parent-name>[tableau_franchises.json]</parent-name>
+            <remote-alias>avg_revenue</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collection</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[collection]</local-name>
+            <parent-name>[tableau_franchises.json]</parent-name>
+            <remote-alias>collection</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movie_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[movie_count]</local-name>
+            <parent-name>[tableau_franchises.json]</parent-name>
+            <remote-alias>movie_count</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='tableau_franchises.json' datatype='table' name='[__tableau_internal_object_id__].[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]' role='measure' type='quantitative' />
+      <column caption='Avg Budget' datatype='real' name='[avg_budget]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_budget</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_rating</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_revenue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Collection' datatype='string' name='[collection]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>collection</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Movie Count' datatype='real' name='[movie_count]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>movie_count</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folders-common>
+        <folder name='Tableau Franchises'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[collection]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tony/AppData/Local/Temp/TableauTemp/#TableauTemp_01f7stx1z09j8b1gdirof1c4q96a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2026 03:43:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_franchises.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_budget</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_budget</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_franchises.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_rating</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_franchises.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_franchises.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>collection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[collection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>collection</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_franchises.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movie_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[movie_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movie_count</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_franchises.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_franchises.json' id='tableau_franchises.json_BF13A5E422FB4942B333C3AEDA8CE75F'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1admtnh0dhwo5u1d4li6106vevhc' name='tableau_franchises.json' table='[tableau_franchises.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_genre_summary' inline='true' name='federated.114dh0f0xydpze1c6t3201scqkjz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_genre_summary' name='semistructpassivestore-direct.0dka4u205cu83618r2o5u1rfscdq'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Tony/tmdb-scrapper' filename='tableau_genre_summary.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[tableau_genre_summary.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.0dka4u205cu83618r2o5u1rfscdq' name='tableau_genre_summary.json' table='[tableau_genre_summary.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_budget]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>avg_budget</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_popularity]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>avg_popularity</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_revenue]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>avg_revenue</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_list</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genre_list]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>genre_list</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movie_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[movie_count]</local-name>
+            <parent-name>[tableau_genre_summary.json]</parent-name>
+            <remote-alias>movie_count</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='tableau_genre_summary.json' datatype='table' name='[__tableau_internal_object_id__].[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]' role='measure' type='quantitative' />
+      <column caption='Avg Budget' datatype='real' name='[avg_budget]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_budget</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Popularity' datatype='real' name='[avg_popularity]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_popularity</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_rating</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_revenue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Genre List' datatype='string' name='[genre_list]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>genre_list</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Movie Count' datatype='real' name='[movie_count]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>movie_count</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folders-common>
+        <folder name='Tableau Genre Summary'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[genre_list]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tony/AppData/Local/Temp/TableauTemp/#TableauTemp_1kn9u6p101kgyo1a2xpbh0rt775c.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2026 04:25:29 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_budget</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_budget</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_popularity</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_rating</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_list</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_list]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_list</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movie_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[movie_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movie_count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_genre_summary.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_genre_summary.json' id='tableau_genre_summary.json_A31B0FE871884A289B21FDDF2D631C38'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.0dka4u205cu83618r2o5u1rfscdq' name='tableau_genre_summary.json' table='[tableau_genre_summary.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_year_trends' inline='true' name='federated.0winyrq0kty0l315lwxp10vnjzaf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_year_trends' name='semistructpassivestore-direct.1l32ovd1ywpok51ajv4lc04jbrgo'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Tony/tmdb-scrapper' filename='tableau_year_trends.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[tableau_year_trends.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1l32ovd1ywpok51ajv4lc04jbrgo' name='tableau_year_trends.json' table='[tableau_year_trends.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_budget]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>avg_budget</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_popularity]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>avg_popularity</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_revenue]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>avg_revenue</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movie_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[movie_count]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>movie_count</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_budget]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>total_budget</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[tableau_year_trends.json]</parent-name>
+            <remote-alias>year</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='tableau_year_trends.json' datatype='table' name='[__tableau_internal_object_id__].[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]' role='measure' type='quantitative' />
+      <column caption='Avg Budget' datatype='real' name='[avg_budget]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_budget</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Popularity' datatype='real' name='[avg_popularity]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_popularity</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_rating</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>avg_revenue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Movie Count' datatype='real' name='[movie_count]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>movie_count</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Budget' datatype='real' name='[total_budget]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>total_budget</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Revenue' datatype='real' name='[total_revenue]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>total_revenue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Year' datatype='real' name='[year]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>year</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folders-common>
+        <folder name='Tableau Year Trends'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[year]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tony/AppData/Local/Temp/TableauTemp/#TableauTemp_1ovzmts04s5spv17n07ar0k3vezs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2026 04:40:57 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_budget</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_budget</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_popularity</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_rating</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>88</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>88</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movie_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[movie_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movie_count</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_budget</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_budget</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tableau_year_trends.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_year_trends.json' id='tableau_year_trends.json_3648FAEC7AA34EEABFD6CEF07F1E607D'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1l32ovd1ywpok51ajv4lc04jbrgo' name='tableau_year_trends.json' table='[tableau_year_trends.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Budget vs Revenue'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_budget_revenue' name='federated.0n5yflh1y3am7k17sfel71avz0ss' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5yflh1y3am7k17sfel71avz0ss'>
+            <column caption='Budget' datatype='real' name='[budget]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>budget</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[budget]' derivation='None' name='[none:budget:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[primary_genre]' derivation='None' name='[none:primary_genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[revenue]' derivation='None' name='[none:revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Primary Genre' datatype='string' name='[primary_genre]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>primary_genre</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>revenue</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[vote_average]' derivation='Sum' name='[sum:vote_average:qk]' pivot='key' type='quantitative' />
+            <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>vote_average</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n5yflh1y3am7k17sfel71avz0ss].[none:budget:qk]' field-type='quantitative' max='729828739.51665759' min='1322837.6396840997' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0n5yflh1y3am7k17sfel71avz0ss].[none:revenue:qk]' field-type='quantitative' max='4718444126.4857216' min='-980779878.43024087' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0n5yflh1y3am7k17sfel71avz0ss].[none:primary_genre:nk]' />
+              <size column='[federated.0n5yflh1y3am7k17sfel71avz0ss].[sum:vote_average:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.47176796197891235' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n5yflh1y3am7k17sfel71avz0ss].[none:revenue:qk]</rows>
+        <cols>[federated.0n5yflh1y3am7k17sfel71avz0ss].[none:budget:qk]</cols>
+      </table>
+      <simple-id uuid='{9035E3AF-1382-4587-BF79-D4E1C5312DE7}' />
+    </worksheet>
+    <worksheet name='Genre Revenue Bar Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_genre_summary' name='federated.114dh0f0xydpze1c6t3201scqkjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.114dh0f0xydpze1c6t3201scqkjz'>
+            <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>avg_revenue</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Genre List' datatype='string' name='[genre_list]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>genre_list</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[genre_list]' derivation='None' name='[none:genre_list:nk]' pivot='key' type='nominal' />
+            <column-instance column='[avg_revenue]' derivation='Sum' name='[sum:avg_revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.114dh0f0xydpze1c6t3201scqkjz].[none:genre_list:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:genre_list:nk]' />
+              <groupfilter function='member' level='[none:genre_list:nk]' member='&quot;TV Movie&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.114dh0f0xydpze1c6t3201scqkjz].[none:genre_list:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.114dh0f0xydpze1c6t3201scqkjz].[none:genre_list:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' field-type='quantitative' max='514523782.38869607' min='-75934794.635405466' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' />
+              <text column='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]</rows>
+        <cols>[federated.114dh0f0xydpze1c6t3201scqkjz].[none:genre_list:nk]</cols>
+      </table>
+      <simple-id uuid='{C7D3A97D-8735-47E3-A8B0-132F888E9FE5}' />
+    </worksheet>
+    <worksheet name='Revenue Over Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_year_trends' name='federated.0winyrq0kty0l315lwxp10vnjzaf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0winyrq0kty0l315lwxp10vnjzaf'>
+            <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>avg_revenue</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_revenue]' derivation='Sum' name='[sum:avg_revenue:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Year' datatype='real' name='[year]' role='dimension' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>year</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0winyrq0kty0l315lwxp10vnjzaf].[none:year:qk]' included-values='in-range'>
+            <min>79.0</min>
+            <max>2016.0</max>
+          </filter>
+          <slices>
+            <column>[federated.0winyrq0kty0l315lwxp10vnjzaf].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0winyrq0kty0l315lwxp10vnjzaf].[none:year:qk]' field-type='quantitative' max='2041.1765000764572' min='1902.1003081140659' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]' field-type='quantitative' max='338274140.93737996' min='-16590825.288133122' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]' />
+              <text column='[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='size' value='1' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]</rows>
+        <cols>[federated.0winyrq0kty0l315lwxp10vnjzaf].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{7B76E13F-45A3-49D0-9D1F-76E86B9E54E9}' />
+    </worksheet>
+    <worksheet name='Revenue by Month x Genre'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_month_genre' name='federated.0vqghh61kuke6q1avqojp0fg92l8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vqghh61kuke6q1avqojp0fg92l8'>
+            <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>avg_revenue</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>genre</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Release Month' datatype='real' name='[release_month]' role='dimension' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>release_month</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[avg_revenue]' derivation='Sum' name='[sum:avg_revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vqghh61kuke6q1avqojp0fg92l8].[Exclusions (Genre,Release Month)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:genre:nk]' />
+                <groupfilter function='level-members' level='[none:release_month:ok]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:genre:nk]' member='&quot;TV Movie&quot;' />
+                <groupfilter function='member' level='[none:release_month:ok]' member='1.0' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vqghh61kuke6q1avqojp0fg92l8].[Exclusions (Genre,Release Month)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0vqghh61kuke6q1avqojp0fg92l8].[sum:avg_revenue:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vqghh61kuke6q1avqojp0fg92l8].[sum:avg_revenue:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0vqghh61kuke6q1avqojp0fg92l8].[sum:avg_revenue:qk]' />
+              <text column='[federated.0vqghh61kuke6q1avqojp0fg92l8].[sum:avg_revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vqghh61kuke6q1avqojp0fg92l8].[none:release_month:ok]</rows>
+        <cols>[federated.0vqghh61kuke6q1avqojp0fg92l8].[none:genre:nk]</cols>
+      </table>
+      <simple-id uuid='{17B69276-924B-4D9C-B7A7-51F634151F51}' />
+    </worksheet>
+    <worksheet name='Top Collection'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_franchises' name='federated.0ze32ds193df4w15o10ta0vtvixw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ze32ds193df4w15o10ta0vtvixw'>
+            <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>avg_revenue</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Collection' datatype='string' name='[collection]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>collection</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[collection]' derivation='None' name='[none:collection:nk]' pivot='key' type='nominal' />
+            <column-instance column='[avg_revenue]' derivation='Sum' name='[sum:avg_revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ze32ds193df4w15o10ta0vtvixw].[none:collection:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([avg_revenue])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Deadpool Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Finding Nemo Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Frozen Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Guardians of the Galaxy Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Harry Potter Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Inside Out Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Iron Man Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Jurassic Park Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Man of Steel Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Minions Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Pirates of the Caribbean Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Spider-Man Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;The Avengers Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;The Dark Knight Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;The Hobbit Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;The Lion King Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;The Lord of the Rings Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;The Secret Life of Pets Collection&quot;' />
+                  <groupfilter function='member' level='[none:collection:nk]' member='&quot;Transformers Collection&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ze32ds193df4w15o10ta0vtvixw].[none:collection:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ze32ds193df4w15o10ta0vtvixw].[none:collection:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]' />
+              <text column='[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ze32ds193df4w15o10ta0vtvixw].[none:collection:nk]</rows>
+        <cols>[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]</cols>
+      </table>
+      <simple-id uuid='{E388B54D-95F2-4A62-8587-A1CF5010EA4C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='114'>
+    <window class='worksheet' name='Genre Revenue Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.114dh0f0xydpze1c6t3201scqkjz].[sum:avg_revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6CC3AA5B-128F-4ACE-925C-FEA5501DBB2D}' />
+    </window>
+    <window class='worksheet' name='Revenue Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0winyrq0kty0l315lwxp10vnjzaf].[sum:avg_revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7FA78837-78C9-445F-83B9-8AB70C24E35E}' />
+    </window>
+    <window class='worksheet' name='Budget vs Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n5yflh1y3am7k17sfel71avz0ss].[none:primary_genre:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0n5yflh1y3am7k17sfel71avz0ss].[sum:vote_average:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6D07237-7D51-402A-9641-7FA82BD5F2A3}' />
+    </window>
+    <window class='worksheet' name='Revenue by Month x Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vqghh61kuke6q1avqojp0fg92l8].[sum:avg_revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2F5E5E2-8493-4101-90BC-47EB8141A67C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Top Collection'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ze32ds193df4w15o10ta0vtvixw].[sum:avg_revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{48CBA11A-04E4-4D8F-AB86-404D9C0AC61C}' />
+    </window>
+  </windows>
+</workbook>

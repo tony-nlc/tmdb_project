@@ -1,0 +1,142 @@
+[
+  {
+    "collection":"Avatar Collection",
+    "movie_count":1,
+    "avg_budget":237000000.0,
+    "avg_revenue":2923706026.0,
+    "avg_rating":7.6
+  },
+  {
+    "collection":"The Avengers Collection",
+    "movie_count":2,
+    "avg_budget":227500000.0,
+    "avg_revenue":1462109604.5,
+    "avg_rating":7.597
+  },
+  {
+    "collection":"Frozen Collection",
+    "movie_count":1,
+    "avg_budget":150000000.0,
+    "avg_revenue":1274219009.0,
+    "avg_rating":7.248
+  },
+  {
+    "collection":"Minions Collection",
+    "movie_count":1,
+    "avg_budget":74000000.0,
+    "avg_revenue":1159457503.0,
+    "avg_rating":6.417
+  },
+  {
+    "collection":"The Hobbit Collection",
+    "movie_count":3,
+    "avg_budget":250000000.0,
+    "avg_revenue":978507785.3333333731,
+    "avg_rating":7.4233333333
+  },
+  {
+    "collection":"The Lord of the Rings Collection",
+    "movie_count":3,
+    "avg_budget":88666666.6666666716,
+    "avg_revenue":972181581.0,
+    "avg_rating":8.4436666667
+  },
+  {
+    "collection":"Transformers Collection",
+    "movie_count":4,
+    "avg_budget":188750000.0,
+    "avg_revenue":943465406.0,
+    "avg_rating":6.303
+  },
+  {
+    "collection":"Finding Nemo Collection",
+    "movie_count":1,
+    "avg_budget":94000000.0,
+    "avg_revenue":940335536.0,
+    "avg_rating":7.817
+  },
+  {
+    "collection":"Pirates of the Caribbean Collection",
+    "movie_count":4,
+    "avg_budget":254750000.0,
+    "avg_revenue":932400861.5,
+    "avg_rating":7.256
+  },
+  {
+    "collection":"Harry Potter Collection",
+    "movie_count":6,
+    "avg_budget":150833333.3333333433,
+    "avg_revenue":901843592.8333333731,
+    "avg_rating":7.7951666667
+  },
+  {
+    "collection":"Jurassic Park Collection",
+    "movie_count":4,
+    "avg_budget":94750000.0,
+    "avg_revenue":894764313.0,
+    "avg_rating":6.8495
+  },
+  {
+    "collection":"The Secret Life of Pets Collection",
+    "movie_count":1,
+    "avg_budget":75000000.0,
+    "avg_revenue":875457937.0,
+    "avg_rating":6.313
+  },
+  {
+    "collection":"Inside Out Collection",
+    "movie_count":1,
+    "avg_budget":175000000.0,
+    "avg_revenue":857611174.0,
+    "avg_rating":7.91
+  },
+  {
+    "collection":"Spider-Man Collection",
+    "movie_count":3,
+    "avg_budget":199000000.0,
+    "avg_revenue":835222792.3333333731,
+    "avg_rating":7.0213333333
+  },
+  {
+    "collection":"The Dark Knight Collection",
+    "movie_count":3,
+    "avg_budget":195000000.0,
+    "avg_revenue":819939468.0,
+    "avg_rating":8.004
+  },
+  {
+    "collection":"Iron Man Collection",
+    "movie_count":3,
+    "avg_budget":180000000.0,
+    "avg_revenue":808228252.6666666269,
+    "avg_rating":7.1453333333
+  },
+  {
+    "collection":"Deadpool Collection",
+    "movie_count":1,
+    "avg_budget":58000000.0,
+    "avg_revenue":782837347.0,
+    "avg_rating":7.622
+  },
+  {
+    "collection":"Guardians of the Galaxy Collection",
+    "movie_count":1,
+    "avg_budget":170000000.0,
+    "avg_revenue":772776600.0,
+    "avg_rating":7.905
+  },
+  {
+    "collection":"Man of Steel Collection",
+    "movie_count":2,
+    "avg_budget":237500000.0,
+    "avg_revenue":771204160.5,
+    "avg_rating":6.313
+  },
+  {
+    "collection":"The Lion King Collection",
+    "movie_count":1,
+    "avg_budget":45000000.0,
+    "avg_revenue":763455561.0,
+    "avg_rating":8.255
+  }
+]
